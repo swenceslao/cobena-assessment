@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Lottie } from "@crello/react-lottie"
 
-import ecommerce from "../lottie-json/9704-ecommerce.json";
 import checkmark from "../lottie-json/checkmark.json";
-import laptop from "../assets/images/laptop.jpg";
 
-const Product = ({ hiddenDetails = false }) => {
+const Product = ({ hiddenDetails = false, laptop }) => {
+  const { name, sku, price, availability, imageUrl, specs: {processor, gpu, display, usb, lan, out} } = laptop
   const [ ram, setRam ] = useState(16);
   const [ storage, setStorage ] = useState(512);
   const selectedCheckbox = "flex flex-row items-center text-xs font-bold uppercase cursor-pointer rounded-md border border-teal-700 text-teal-600 bg-teal-50 my-3 py-2 px-4 h-10 shadow-md";
@@ -24,31 +23,31 @@ const Product = ({ hiddenDetails = false }) => {
 
   return (
     <>
-      <div className="flex-grow border border-gray-300 rounded-md flex flex-row items-center justify-evenly px-8 py-10 m-2">
-        <img src={laptop} className="w-48 pr-3" alt="laptop" />
+      <div className="flex-grow border border-gray-300 rounded-md flex flex-row items-center justify-evenly px-8 py-10 m-2 bg-transparent hover:bg-white transform hover:scale-105 transition duration-100 ease-in-out" id={sku}>
+        <img src={imageUrl} className="w-32 lg:w-48 xl:w-96 pr-3" alt="laptop" />
         <form className="pl-3">
           <div>
             <h1 className="w-full flex-none font-semibold mb-2.5">
-              Gigabite Aorous GTX
+              {name}
             </h1>
             <div className="flex flex-wrap flex-row items-baseline">
               <div className="text-4xl leading-7 font-bold text-purple-600">
-                &#8369;39,599
+                &#8369;{price}
               </div>
-              <div className="text-sm font-medium text-gray-400 ml-3">
-                In stock
+              <div className="text-sm font-medium capitalize text-gray-400 ml-3">
+                {availability}
               </div>
             </div>
           </div>
           { !hiddenDetails && <>
             <div className="mt-6">
               <ul>
-                <li className="text-sm">Intel Core i5-10210U</li>
-                <li className="text-sm">GTX 1650 TI 4GB GDDR5X</li>
-                <li className="text-sm">15.6" 1080p FHD IPS display</li>
-                <li className="text-sm">2 USB 3.1 Gen 2 ports</li>
-                <li className="text-sm">RJ45 Ethernet port</li>
-                <li className="text-sm">HDMI 1.4</li>
+                <li className="text-sm">{processor}</li>
+                <li className="text-sm">{gpu}</li>
+                <li className="text-sm">{display}</li>
+                <li className="text-sm">{usb}</li>
+                <li className="text-sm">{lan}</li>
+                <li className="text-sm">{out}</li>
               </ul>
             </div>
             <div className="mt-6">

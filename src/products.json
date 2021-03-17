@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Gigabite Aorous GTX",
+    "sku": "abc1234",
+    "price": "39599",
+    "availability": "in stock",
+    "imageUrl": "https://static.straitstimes.com.sg/s3fs-public/articles/2020/06/16/nz_gigabyte_160642.jpg",
+    "specs": {
+      "processor": "Intel Core i5-10210U",
+      "gpu": "NVIDIA GTX 1650 Ti 4GB",
+      "display": "15.6\" 1080p FHD IPS display",
+      "usb": "2 USB 3.1 Gen 2 ports",
+      "lan": "RJ45 Ethernet port",
+      "out": "HDMI 1.4"
+    }
+  },
+  {
+    "name": "Gigabite Aorous RTX",
+    "sku": "def1234",
+    "price": "46599",
+    "availability": "in stock",
+    "imageUrl": "https://static.straitstimes.com.sg/s3fs-public/articles/2020/06/16/nz_gigabyte_160642.jpg",
+    "specs": {
+      "processor": "Intel Core i7-10510U",
+      "gpu": "NVIDIA RTX 2060 6GB Max-Q",
+      "display": "15.6\" 1080p 144Hz FHD IPS display",
+      "usb": "3 USB 3.1 Gen 2 ports",
+      "lan": "RJ45 Ethernet port",
+      "out": "HDMI 2.0"
+    }
+  },
+  {
+    "name": "Gigabite Aorous GTX2",
+    "sku": "ghi1234",
+    "price": "49599",
+    "availability": "in stock",
+    "imageUrl": "https://static.straitstimes.com.sg/s3fs-public/articles/2020/06/16/nz_gigabyte_160642.jpg",
+    "specs": {
+      "processor": "Intel Core i7-10510U",
+      "gpu": "NVIDIA GTX 1660 Ti 6GB",
+      "display": "15.6\" 1440p QHD IPS display",
+      "usb": "2 USB 3.1 Gen 2 ports",
+      "lan": "RJ45 Ethernet port",
+      "out": "HDMI 2.0"
+    }
+  },
+  {
+    "name": "Gigabite Aorous RTX2",
+    "sku": "jkl1234",
+    "price": "56599",
+    "availability": "in stock",
+    "imageUrl": "https://static.straitstimes.com.sg/s3fs-public/articles/2020/06/16/nz_gigabyte_160642.jpg",
+    "specs": {
+      "processor": "Intel Core i7-10510U",
+      "gpu": "NVIDIA RTX 2070 8GB Max-Q",
+      "display": "15.6\" 1440p 144Hz QHD IPS display",
+      "usb": "3 USB 3.1 Gen 2 ports",
+      "lan": "RJ45 Ethernet port",
+      "out": "HDMI 2.0"
+    }
+  }
+]

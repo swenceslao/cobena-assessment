@@ -5,6 +5,7 @@ import Product from "../components/Product";
 
 import ecommerce from "../lottie-json/9704-ecommerce.json";
 import companyBg from "../assets/images/olena-sergienko-W2BI02QOncg-unsplash.jpg";
+import laptops from "../products.json";
 
 const LandingPage = () => {
   return (
@@ -26,12 +27,14 @@ const LandingPage = () => {
           />
         </div>
       </section>
-      <section id="products" className="mb-16 mx-auto w-4/5 ">
-        <h1 className="text-4xl font-sans	font-extrabold mx-0 md:mx-6 lg:mx-12">Our bestsellers</h1>
-        <div className="mx-auto w-full flex flex-row flex-wrap justify-start">
-          <Product hiddenDetails/>
-          <Product hiddenDetails/>
-          <Product hiddenDetails/>
+      <section id="products" className="bg-gray-100 w-full">
+        <div className="mb-16 mx-auto py-20 w-4/5">
+          <h1 className="text-4xl font-sans	font-extrabold mx-0 md:mx-6 lg:mx-12 mb-10">Our bestsellers</h1>
+          <div className="mx-auto w-full flex flex-row flex-wrap justify-start">
+            {laptops.map((laptop, index) => (
+              <Product key={index} hiddenDetails laptop={laptop} />
+            ))}
+          </div>
         </div>
       </section>
       <section id="hero" className="grid grid-cols-1 lg:grid-cols-5 gap-2 mx-auto mb-16 w-4/5 lg:w-3/4 ">

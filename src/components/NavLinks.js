@@ -13,10 +13,10 @@ const NavLinks = React.forwardRef((props, ref) => {
                 <NavLink to="/">Home</NavLink >
               </li>
               <li className="inline-block ml-8">
-                <NavLink to="/products">Products</NavLink >
+                <NavLink to="/products" activeClassName="font-bold">Products</NavLink >
               </li>
               <li className="inline-block ml-8">
-                <NavLink to="/contact">Contact</NavLink >
+                <NavLink to="/contact" activeClassName="font-bold">Contact</NavLink >
               </li>
             </>
           :
@@ -25,10 +25,10 @@ const NavLinks = React.forwardRef((props, ref) => {
                 <NavLink to="/">Home</NavLink >
               </li>
               <li className="block my-2 mr-16" onClick={ref}>
-                <NavLink to="/products">Products</NavLink >
+                <NavLink to="/products" activeClassName="font-bold">Products</NavLink >
               </li>
               <li className="block my-2 mr-16" onClick={ref}>
-                <NavLink to="/contact">Contact</NavLink >
+                <NavLink to="/contact" activeClassName="font-bold">Contact</NavLink >
               </li>
             </>
         }
