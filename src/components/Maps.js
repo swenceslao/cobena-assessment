@@ -9,7 +9,7 @@ const center = {
 const Maps = () => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyB0ZhWbALtb5kmGqpf5R3w0b3cBnBgdleI"
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
   });
 
   const [map, setMap] = useState(null);
