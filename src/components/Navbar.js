@@ -1,5 +1,5 @@
 import React from "react";
-import "../app.css";
+import "../App.css";
 import Logo from "./Logo";
 import Popup from "reactjs-popup";
 import NavLinks from "./NavLinks";
